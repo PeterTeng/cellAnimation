@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource,  UITableViewDeleg
     var dataArray = [String]()
     
     override func viewWillAppear(animated: Bool) {
-        for i in 1...40 {
+        for i in 1...100 {
             dataArray.append("cell \(i)")
         }
         
@@ -56,7 +56,7 @@ class ViewController: UIViewController, UITableViewDataSource,  UITableViewDeleg
         
         cell.layer.transform = slideInTransform
         
-        UIView.animateWithDuration(0.2) { () -> Void in
+        UIView.animateWithDuration(0.3) { () -> Void in
             
             cell.layer.transform = CATransform3DIdentity
             
