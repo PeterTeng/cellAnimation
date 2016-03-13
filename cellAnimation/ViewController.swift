@@ -18,7 +18,6 @@ class ViewController: UIViewController, UITableViewDataSource,  UITableViewDeleg
         for i in 1...100 {
             dataArray.append("cell \(i)")
         }
-        
         print(dataArray)
     }
     
@@ -64,7 +63,9 @@ class ViewController: UIViewController, UITableViewDataSource,  UITableViewDeleg
         
     }
     
-    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
