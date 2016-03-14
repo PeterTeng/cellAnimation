@@ -55,11 +55,13 @@ class ViewController: UIViewController, UITableViewDataSource,  UITableViewDeleg
         
         cell.layer.transform = slideInTransform
         
-        UIView.animateWithDuration(0.3) { () -> Void in
+        
+        // UserInteractionを許可するアニメーション
+        UIView.animateWithDuration(0.7, delay: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: { () -> Void in
             
             cell.layer.transform = CATransform3DIdentity
             
-        }
+            }, completion: nil)
         
     }
     
